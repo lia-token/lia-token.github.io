@@ -1,0 +1,246 @@
+/* Цветовая палитра:
+--dark-blue: #1A2B3C;
+--primary-blue: #2196F3;
+--light-blue: #E3F2FD;
+--white: #FFFFFF;
+--text-color: #333333;
+--light-grey-bg: #F4F8FB;
+*/
+
+/* Общие стили для всего тела страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Более современный шрифт */
+    margin: 0; /* Убираем стандартные отступы браузера */
+    padding: 0; /* Убираем стандартные внутренние отступы */
+    background-color: #F4F8FB; /* Очень светло-голубой/серый фон */
+    color: #333333; /* Темно-серый цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #1A2B3C; /* Темно-синий фон, почти черный */
+    color: #FFFFFF; /* Белый текст */
+    padding: 2.5em 0; /* Увеличиваем отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    position: relative; /* Для позиционирования логотипа */
+}
+
+.logo-placeholder {
+    margin-bottom: 1.5em; /* Отступ под логотипом */
+}
+
+.logo-placeholder img {
+    max-width: 160px; /* Максимальная ширина логотипа */
+    height: auto;
+    border-radius: 50%; /* Если хотите круглый логотип */
+    border: 4px solid #FFFFFF; /* Белая рамка вокруг логотипа */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Тень для логотипа */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.2em; /* Больше размер для главного заголовка */
+    letter-spacing: 1.5px; /* Небольшой интервал между буквами */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Легкая тень для текста */
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #E3F2FD; /* Светло-голубой текст для подзаголовка */
+    margin-top: 0.8em;
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 25px; /* Увеличенные внутренние отступы */
+    max-width: 1000px; /* Увеличиваем максимальную ширину */
+    margin: 40px auto; /* Больше отступов сверху/снизу */
+    background-color: #FFFFFF; /* Белый фон */
+    border-radius: 12px; /* Более скругленные углы */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Более выраженная тень */
+}
+
+.section-block {
+    padding: 25px 0;
+    border-bottom: 1px dashed #E3F2FD; /* Разделительная линия в виде пунктира */
+    margin-bottom: 25px;
+}
+
+.section-block:last-child {
+    border-bottom: none; /* Убираем линию у последнего блока */
+}
+
+.section-block h2 {
+    color: #2196F3; /* Основной синий цвет для заголовков секций */
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase; /* Заголовки заглавными буквами */
+    letter-spacing: 0.5px;
+}
+
+.section-block h3 {
+    color: #1A2B3C; /* Темно-синий для подзаголовков */
+    font-size: 1.6em;
+    margin-top: 1.8em;
+}
+
+.section-block p {
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin-bottom: 1em;
+}
+
+/* Стили для сетки преимуществ */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    gap: 25px; /* Расстояние между элементами */
+    margin-top: 2.5em;
+}
+
+.advantage-item {
+    background-color: #E3F2FD; /* Светло-голубой фон для элемента */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.advantage-item:hover {
+    transform: translateY(-7px); /* Подъем при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.advantage-item h3 {
+    color: #2196F3; /* Основной синий цвет */
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+.advantage-item p {
+    font-size: 1em;
+    color: #555555;
+    text-align: center;
+}
+
+/* Стили для списков */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.2em 0;
+}
+
+ul li {
+    background-color: #F8FCFF; /* Очень светлый фон для элементов списка */
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-left: 5px solid #2196F3; /* Синяя полоса слева */
+    border-radius: 6px;
+    font-size: 1.05em;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Легкая тень */
+}
+
+/* Стили для кнопок */
+.cta-buttons {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.button-primary, .button-secondary {
+    display: inline-block;
+    padding: 14px 30px; /* Увеличенные размеры кнопок */
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15em;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.button-primary {
+    background-color: #2196F3; /* Основной синий цвет для главной кнопки */
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+.button-primary:hover {
+    background-color: #1976D2; /* Более темный синий при наведении */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(33, 150, 243, 0.4);
+}
+
+.button-secondary {
+    background-color: #FFFFFF; /* Белый фон для второстепенной кнопки */
+    color: #2196F3; /* Синий текст */
+    border: 2px solid #2196F3; /* Синяя рамка */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary:hover {
+    background-color: #E3F2FD; /* Легкий голубой фон при наведении */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.05em;
+    color: #666666;
+}
+
+.social-links a {
+    color: #2196F3;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+/* Стили для подвала сайта */
+footer {
+    text-align: center;
+    padding: 1.8em 0;
+    margin-top: 40px;
+    background-color: #1A2B3C; /* Темно-синий фон */
+    color: #bdc3c7; /* Светло-серый текст */
+    font-size: 0.95em;
+}
+
+/* Медиа-запросы для адаптивности (для мобильных устройств) */
+@media (max-width: 768px) {
+    header {
+        padding: 2em 0;
+    }
+    header h1 {
+        font-size: 2.2em;
+    }
+    .subtitle {
+        font-size: 1.1em;
+    }
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .section-block h2 {
+        font-size: 1.8em;
+    }
+    .advantages-grid {
+        grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
+    }
+    .button-primary, .button-secondary {
+        display: block; /* Кнопки в столбец */
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
