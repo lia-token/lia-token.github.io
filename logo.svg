@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666678 8.4666666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   sodipodi:docname="LIA 4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="9.47"
+     inkscape:cx="16.789863"
+     inkscape:cy="15.892291"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <circle
+       style="fill:#0000ff;stroke-width:0.272394"
+       id="path1"
+       cx="4.2607145"
+       cy="4.2327752"
+       r="4.176897" />
+    <path
+       d="M 4.7191461,3.2170338 4.5631367,3.5952385 Q 4.2558454,4.3232826 3.9911021,5.046599 3.863458,5.3964384 3.6034423,6.2663092 3.9958296,6.2332163 4.6576879,6.1008446 q 0.4254802,-0.085096 0.5153039,-0.085096 0.1654645,0 0.1654645,0.1323716 0,0.1560095 -0.1843748,0.439663 -0.1796472,0.2789259 -0.40657,0.482211 -0.1560095,0.1465543 -0.4633008,0.203285 -0.3072913,0.056731 -0.9596944,0.056731 -0.6098551,0 -0.9407842,-0.037821 -0.00473,0 -0.1560094,-0.047276 Q 1.9582518,7.1314524 1.9582518,6.772158 q 0,-0.2600158 0.1465544,-0.9502393 Q 2.256088,5.1316951 2.5397416,4.1058149 3.1826895,1.8176765 3.5088911,1.2787348 3.6128974,1.09436 3.7689068,0.99508124 q 0.160737,-0.10400629 0.4349354,-0.160737 0.2647433,-0.0567307 0.6098551,-0.0567307 0.321474,0 0.4491181,0.085096 0.1323716,0.0803685 0.1323716,0.28365346 0,0.1938299 -0.1701921,0.7280441 -0.1701921,0.5294865 -0.5058488,1.3426267 z"
+       id="text1"
+       style="font-size:9.68204px;font-family:Forte;-inkscape-font-specification:Forte;fill:#ffffff;stroke-width:0.806835"
+       transform="scale(1.0026398,0.99736714)"
+       aria-label="L" />
+  </g>
+</svg>
