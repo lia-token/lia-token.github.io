@@ -1,7 +1,7 @@
 /* Цветовая палитра: */
 :root {
     --dark-blue: #1A2B3C;
-    --primary-blue: #2196F3;
+    --primary-blue: #2196F3; /* Ваш основной синий цвет */
     --light-blue: #E3F2F0;
     --white: #FFFFFF;
     --text-color: #333333;
@@ -21,7 +21,7 @@ body {
 /* Стили для шапки сайта */
 header {
     background-color: var(--dark-blue);
-    color: var(--white); /* Белый цвет текста для шапки (было #FFFFFF) */
+    color: var(--white); /* Белый цвет текста для шапки */
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Легкая тень для лучшей читаемости текста */
     padding: 60px 20px; /* Вертикальные и горизонтальные отступы */
     text-align: center; /* Выравнивание текста по центру */
@@ -34,9 +34,9 @@ header {
 
 .logo-placeholder img {
     max-width: 150px; /* Максимальная ширина логотипа на десктопе */
-    height: auto;     /* Автоматическая высота для сохранения пропорций */
-    display: block;   /* Делает изображение блочным элементом */
-    margin: 0 auto;   /* Центрирует изображение по горизонтали */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    display: block; /* Делает изображение блочным элементом */
+    margin: 0 auto; /* Центрирует изображение по горизонтали */
 }
 
 header h1 {
@@ -107,16 +107,20 @@ header p.subtitle {
     display: inline-block;
     background-color: var(--primary-blue);
     color: var(--white);
-    padding: 15px 30px;
+    padding: 15px 20px; /* Уменьшим горизонтальный отступ, чтобы сделать более квадратным */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Можете убрать, если хотите строгие углы: border-radius: 0; */
     margin-top: 20px;
     font-weight: bold;
+    text-align: center; /* Центрируем текст внутри */
+    min-width: 100px; /* Зададим минимальную ширину, чтобы не схлопнулся */
+    height: auto; /* Высота будет зависеть от padding и шрифта */
+    line-height: 1.2; /* Улучшим интерлиньяж, если текст в несколько строк */
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #1a6cb1; /* Немного темнее primary-blue при наведении */
+    background-color: #1a6cb1; /* Немного темнее при наведении */
 }
 
 /* Стили для нижнего колонтитула */
@@ -177,22 +181,5 @@ footer p {
     footer {
         padding: 30px 15px; /* Уменьшаем отступы в футере */
     }
-css
-.button {
-display: inline-block;
-background-color: var(--primary-blue); /* Используем ваш основной синий цвет /
-color: var(--white);
-padding: 15px 20px; / Уменьшим горизонтальный отступ, чтобы сделать более квадратным /
-text-decoration: none;
-border-radius: 5px; / Можете убрать, если хотите строгие углы: border-radius: 0; /
-margin-top: 20px;
-font-weight: bold;
-text-align: center; / Центрируем текст внутри /
-min-width: 100px; / Зададим минимальную ширину, чтобы не схлопнулся /
-height: auto; / Высота будет зависеть от padding и шрифта /
-line-height: 1.2; / Улучшим интерлиньяж, если текст в несколько строк */
-transition: background-color 0.3s ease;
 }
-.button:hover {
-background-color: #1a6cb1; /* Немного темнее при наведении */
-}
+
