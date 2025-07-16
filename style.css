@@ -178,3 +178,22 @@ footer p {
         padding: 30px 15px; /* Уменьшаем отступы в футере */
     }
 }
+`css
+.button {
+display: inline-block;
+background-color: var(--primary-blue); /* Используем ваш основной синий цвет /
+color: var(--white);
+padding: 15px 20px; / Уменьшим горизонтальный отступ, чтобы сделать более квадратным /
+text-decoration: none;
+border-radius: 5px; / Можете убрать, если хотите строгие углы: border-radius: 0; /
+margin-top: 20px;
+font-weight: bold;
+text-align: center; / Центрируем текст внутри /
+min-width: 100px; / Зададим минимальную ширину, чтобы не схлопнулся /
+height: auto; / Высота будет зависеть от padding и шрифта /
+line-height: 1.2; / Улучшим интерлиньяж, если текст в несколько строк */
+transition: background-color 0.3s ease;
+}
+.button:hover {
+background-color: #1a6cb1; /* Немного темнее при наведении */
+}
