@@ -1,10 +1,10 @@
 /* Цветовая палитра:
-dark-blue: #1A2B3C;
-primary-blue: #2196F3;
-light-blue: #E3F2FD;
-white: #FFFFFF;
-text-color: #333333;
-light-grey-bg: #F4F8FB;
+--dark-blue: #1A2B3C;
+--primary-blue: #2196F3;
+--light-blue: #E3F2FD;
+--white: #FFFFFF;
+--text-color: #333333;
+--light-grey-bg: #F4F8FB;
 */
 
 /* Общие стили для всего тела страницы */
