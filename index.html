@@ -98,36 +98,85 @@
             <div class="highlight">
                 <p><strong>Арбитражеры </strong> играют ключевую роль в поддержании больших привязок LIA, постоянно возвращая цену для включения отметки 1:1.</p>
             </div>
-        </div>
+       
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример ссылки на контракт Polygon</title>
 
-   <head>
     <style>
+        /* --- Стили для ссылки на контракт --- */
         .contract-link {
-            /* /* --- Стили для ссылки на контракт --- */
-.contract-link {
-    display: inline-block; /* Чтобы можно было применять отступы и размеры */
-    padding: 5px 10px; /* Внутренние отступы */
-    background-color: #007bff; /* Ярко-синий фон */
-    color: #ffffff; /* Белый текст */
-    text-decoration: none; /* Убираем стандартное подчеркивание ссылки */
-    border: 1px solid #0056b3; /* Темно-синяя рамка для контраста */
-    border-radius: 5px; /* Немного скругленные углы */
-    font-family: Arial, sans-serif; /* Шрифт */
-    font-size: 14px; /* Размер шрифта */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход при наведении */
-}
+            display: inline-block; /* Чтобы можно было применять отступы и размеры */
+            padding: 8px 15px; /* Внутренние отступы, немного больше для лучшего вида */
+            background-color: #007bff; /* Ярко-синий фон */
+            color: #ffffff; /* Белый текст */
+            text-decoration: none; /* Убираем стандартное подчеркивание ссылки */
+            border: 1px solid #0056b3; /* Темно-синяя рамка для контраста */
+            border-radius: 6px; /* Немного скругленные углы */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+            font-size: 15px; /* Размер шрифта */
+            font-weight: 500; /* Полужирный текст */
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Плавный переход при наведении */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
         }
+
         .contract-link:hover {
-            /* .contract-link:hover {
-    background-color: #0056b3; /* Темно-синий фон при наведении */
-    border-color: #004085; /* Еще темнее рамка при наведении */
-    color: #e0e0e0; /* Чуть темнее белый текст при наведении (опционально) */
-    cursor: pointer; /* Показываем, что это кликабельно */
-} */
+            background-color: #0056b3; /* Темно-синий фон при наведении */
+            border-color: #004085; /* Еще темнее рамка при наведении */
+            color: #e0e0e0; /* Чуть светлее текст при наведении для контраста */
+            cursor: pointer; /* Показываем, что это кликабельно */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
+        }
+
+        /* --- Стилизация текста адреса внутри ссылки (опционально) --- */
+        .contract-link .address-text {
+            font-family: 'Consolas', 'Courier New', monospace; /* Моноширинный шрифт для адреса */
+            font-size: 14px; /* Чуть меньше размер для адреса */
+            letter-spacing: 0.2px; /* Немного увеличить расстояние между буквами */
+        }
+
+        /* Дополнительные стили для примера */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
     </style>
-</head>   
-              
+</head>
+<body>
+
+    <h1>Информация о контракте</h1>
+
+    <p>
+        Ниже представлен адрес контракта в сети Polygon. Вы можете кликнуть по нему, чтобы просмотреть все детали на PolygonScan.
+    </p>
+
+    <a href="https://polygonscan.com/address/0xd00F69464c4486079ed28262059C24987C1A8381"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contract-link">
+        <span class="address-text">0xd00F69464c4486079ed28262059C24987C1A8381</span>
+    </a>
+
+    <p style="margin-top: 20px;">
+        Этот адрес ведет непосредственно к странице контракта на PolygonScan, где вы найдете всю необходимую информацию, такую как транзакции, держатели и исходный код (если он верифицирован).
+    </p>
+
+</body>
+</html>  
         <section id="call-to-action" class="section-block cta-section">
             <h2>Присоединяйтесь к Будущему Арбитража с ЛИЯ!</h2>
             <div class="cta-buttons">
