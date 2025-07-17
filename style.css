@@ -1,1 +1,184 @@
+/* Цветовая палитра: */
+:root {
+    --dark-blue: #1A2B3C;
+    --primary-blue: #2196F3; /* Ваш основной синий цвет */
+    --light-blue: #E3F2F0;
+    --white: #FFFFFF;
+    --text-color: #333333;
+    --light-grey-bg: #F4F8F8;
+}
 
+/* Общие стили для всего тела страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grey-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-placeholder {
+    margin-bottom: 20px;
+}
+
+.logo-placeholder img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p.subtitle {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* Стили для секций контента */
+.section-block {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.section-block:last-child {
+    margin-bottom: 0;
+}
+
+.section-block h2 {
+    color: var(--dark-blue);
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-block p {
+    color: var(--text-color);
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.section-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-block ul li {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.section-block ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Стили для кнопок и ссылок */
+.button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 100px;
+    height: auto;
+    line-height: 1.2;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1a6cb1;
+}
+
+/* Стили для нижнего колонтитула */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p.subtitle {
+        font-size: 1.1em;
+    }
+
+    .logo-placeholder img {
+        max-width: 100px;
+    }
+
+    .section-block {
+        padding: 30px 15px;
+        margin-bottom: 20px;
+    }
+
+    .section-block h2 {
+        font-size: 1.8em;
+    }
+
+    .section-block p {
+        font-size: 0.95em;
+    }
+
+    .section-block ul li {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
