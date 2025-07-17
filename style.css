@@ -1,7 +1,7 @@
 /* Цветовая палитра: */
 :root {
-    --dark-blue: #1A2B3C;
-    --primary-blue: #2196F3; /* Ваш основной синий цвет */
+    --dark-blue: #1A2B3C; /* Очень темный синий, почти черный */
+    --primary-blue: #2196F3; /* Ваш основной яркий синий цвет */
     --light-blue: #E3F2F0;
     --white: #FFFFFF;
     --text-color: #333333;
@@ -68,7 +68,7 @@ header p.subtitle {
 }
 
 .section-block h2 {
-    color: var(--dark-blue);
+    color: var(--primary-blue); /* ИЗМЕНЕНО: теперь заголовки H2 будут ярко-синими */
     font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 20px;
@@ -107,13 +107,13 @@ header p.subtitle {
     display: inline-block;
     background-color: var(--primary-blue);
     color: var(--white);
-    padding: 15px 20px;
+    padding: 15px 30px; /* ИЗМЕНЕНО: увеличен горизонтальный padding для вытянутой кнопки */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
-    min-width: 100px;
+    /* min-width: 100px; <--- Эта строка закомментирована, чтобы ширина зависела от текста и padding */
     height: auto;
     line-height: 1.2;
     transition: background-color 0.3s ease;
@@ -122,6 +122,46 @@ header p.subtitle {
 .button:hover {
     background-color: #1a6cb1;
 }
+
+/* Стили для кнопки с классом .button-primary (ваша кнопка DEX LIA) */
+.button-primary {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 15px 30px; /* ИЗМЕНЕНО: увеличен горизонтальный padding */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #1a6cb1;
+}
+
+/* Стили для ссылки на контракт */
+.contract-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    word-wrap: break-word; /* Для переноса длинных адресов */
+}
+
+.contract-link:hover {
+    text-decoration: underline;
+}
+
+.address-text {
+    font-family: 'Consolas', 'Monaco', monospace; /* Моноширинный шрифт для адреса */
+    font-size: 0.9em;
+}
+
 
 /* Стили для нижнего колонтитула */
 footer {
@@ -173,7 +213,7 @@ footer p {
         font-size: 0.9em;
     }
 
-    .button {
+    .button, .button-primary { /* Применяем стили адаптивности к обеим кнопкам */
         padding: 12px 25px;
         font-size: 0.9em;
     }
@@ -182,3 +222,4 @@ footer p {
         padding: 30px 15px;
     }
 }
+
