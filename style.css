@@ -47,9 +47,9 @@ header {
 
 .logo img {
   width: 100%;
-  max-width:200px;
-  height: 200px;
-  border-radius: 100%;
+  max-width:150px;
+  height: 150px;
+  border-radius: 80%;
   background-color: var(--white);
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ header {
 }
 
 .logo-placeholder {
-  font-size: 200px;
+  font-size: 150px;
   color: var(--primary-color);
 }
 
