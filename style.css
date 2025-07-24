@@ -45,8 +45,9 @@ header {
   text-align: center;
 }
 
-.logo {
-  width: 120px;
+.logo img {
+  width: 100%;
+  max-width:100px;
   height: 120px;
   border-radius: 50%;
   background-color: var(--white);
