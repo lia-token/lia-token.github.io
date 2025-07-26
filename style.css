@@ -48,11 +48,9 @@ header {
   text-align: center;
 }
 
-.logo img {
+.logo {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
