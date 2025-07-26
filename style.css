@@ -51,7 +51,7 @@ header {
 .logo {
   width: 120px;
   height: 120px;
-  border:none !important;
+  border:none important;
   display: flex;
   justify-content: center;
   align-items: center;
