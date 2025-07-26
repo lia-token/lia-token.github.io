@@ -43,15 +43,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
+  min-height:300px;
   text-align: center;
 }
 
 .logo img {
-  width: 100%;
-  height: auto;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-color: var(--white);
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
