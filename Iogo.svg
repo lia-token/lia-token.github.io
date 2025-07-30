@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg 
-  width="120" 
-  height="120" 
-  viewBox="0 0 31.75 31.75"
-  xmlns="http://www.w3.org/2000/svg">
-  
-  <!-- Синий фон -->
-  <circle cx="15.97" cy="15.92" r="15.76" fill="#0000ff"/>
-  
-  <!-- Буква L (уже как контур) -->
-  <path 
-    d="M6 28.8 L6 25.5 L11 25.5 L11 15 L14 15 L14 28.8 Z"
-    fill="#fff"
-    transform="scale(1.068,0.936)"/>
-</svg>
+
