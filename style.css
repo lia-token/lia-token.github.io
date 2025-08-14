@@ -1,27 +1,6 @@
 
 :root {
-  /* Цветовая схема */
-  --primary-color: #1a5f9c;       /* Основной синий */
-  --secondary-color: #2c8ae8;     /* Вторичный синий */
-  --accent-color: #f8c537;        /* Акцентный желтый */
-  --light-color: #f8f9fa;         /* Светлый фон */
-  --dark-color: #343a40;          /* Темный текст */
-    --text-color: #333;             /* Основной цвет текста */
-  --white: #ffffff;               /* Белый */
  
-/* Базовые стили */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--white);
-}
 
 /* Шапка */
 header {
