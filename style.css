@@ -64,40 +64,6 @@ header {
   background-position: center;
   background-size: cover;
 }
-  
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
-
-.tagline {
-  font-size: 1.2rem;
-  color: var(--gray-color);
-  margin-bottom: 20px;
-}
-
-/* Основные секции */
-section {
-  padding: 60px 0;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--primary-color);
-  position: relative;
-}
-
-.section-title:after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: var(--accent-color);
-  margin: 15px auto 0;
-}
 
 /* Секция "О проекте" */
 .about-content {
