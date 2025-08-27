@@ -192,45 +192,5 @@
         <p>Кнопки навигации имеют эффекты при наведении и нажатии. Шапка полностью адаптивна и будет правильно отображаться на мобильных устройствах.</p>
         <p>Попробуйте уменьшить размер окна браузера, чтобы увидеть, как шапка адаптируется под мобильные устройства.</p>
     </div>
-
-    <script>
-        // Добавляем функциональность для кнопок
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.nav-button');
-            
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Убираем активный класс у всех кнопок
-                    buttons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Добавляем активный класс к нажатой кнопке
-                    this.classList.add('active');
-                    
-                    // Здесь можно добавить логику перехода по страницам
-                    console.log('Нажата кнопка:', this.textContent.trim());
-                });
-            });
-
-            // Обработка поля ввода названия проекта
-            const projectInput = document.querySelector('.project-title input');
-            
-            projectInput.addEventListener('input', function() {
-                console.log('Название проекта изменено на:', this.value);
-                document.title = this.value + " | Шапка сайта";
-            });
-
-            projectInput.addEventListener('blur', function() {
-                if (!this.value.trim()) {
-                    this.value = 'Мой проект';
-                }
-            });
-
-            // Добавляем иконки с помощью Font Awesome (уже подключены через CDN)
-            // Для этого мы уже добавили теги <i> в HTML
-        });
-    </script>
-
-    <!-- Подключаем Font Awesome для иконок -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</body>
+   </body>
 </html>
