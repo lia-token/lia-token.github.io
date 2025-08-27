@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта с навигацией</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .project-title {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .project-title input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2c3e50;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .project-title input:focus {
+            background: white;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .project-title input::placeholder {
+            color: #7f8c8d;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+        }
+
+        .nav-button.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #3498db;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .project-title {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .nav-buttons {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .nav-button {
+                flex: 1;
+                min-width: 120px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-buttons {
+                flex-direction: column;
+            }
+
+            .nav-button {
+                width: 100%;
+            }
+        }
+
+        /* Контент для демонстрации */
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="project-title">
+                    <input type="text" placeholder="Название проекта" value="Мой проект">
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-button active">
+                        <i class="fas fa-home"></i> Главная
+                    </button>
+                    <button class="nav-button">
+                        <i class="fas fa-info-circle"></i> О проекте
+                    </button>
+                    <button class="nav-button">
+                        <i class="fas fa-envelope"></i> Контакты
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Демонстрация шапки сайта</h1>
+        <p>Эта шапка содержит поле для названия проекта и три кнопки навигации. Вы можете изменить название проекта, кликнув на поле ввода.</p>
+        <p>Кнопки навигации имеют эффекты при наведении и нажатии. Шапка полностью адаптивна и будет правильно отображаться на мобильных устройствах.</p>
+        <p>Попробуйте уменьшить размер окна браузера, чтобы увидеть, как шапка адаптируется под мобильные устройства.</p>
+    </div>
+
+    <script>
+        // Добавляем функциональность для кнопок
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.nav-button');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Убираем активный класс у всех кнопок
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Добавляем активный класс к нажатой кнопке
+                    this.classList.add('active');
+                    
+                    // Здесь можно добавить логику перехода по страницам
+                    console.log('Нажата кнопка:', this.textContent.trim());
+                });
+            });
+
+            // Обработка поля ввода названия проекта
+            const projectInput = document.querySelector('.project-title input');
+            
+            projectInput.addEventListener('input', function() {
+                console.log('Название проекта изменено на:', this.value);
+                document.title = this.value + " | Шапка сайта";
+            });
+
+            projectInput.addEventListener('blur', function() {
+                if (!this.value.trim()) {
+                    this.value = 'Мой проект';
+                }
+            });
+
+            // Добавляем иконки с помощью Font Awesome (уже подключены через CDN)
+            // Для этого мы уже добавили теги <i> в HTML
+        });
+    </script>
+
+    <!-- Подключаем Font Awesome для иконок -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
